@@ -1,20 +1,19 @@
 class AccountInterface : 
-    #-------------------
-    # 
-    #-------------------
+    
     def __init__(self, accountNumber, customerID, status, balance) :
         self.__balance = balance
         self.__accountNumber = accountNumber
         self.__accountHolderID = customerID
-        self.__status = status
+        
+    #----------------------------------------------
+    # Debit is to add money to the account
+    # Credit is to remove money from the account
+    #----------------------------------------------
 
-    def deposit(self, amount) :
+    def debit(self, amount) :
         pass
 
-    def withdraw(self, amount) :
-        pass
-
-    def getBalance(self) :
+    def credit(self, amount) :
         pass
     
     def getTransactionHistory(self) :
@@ -31,12 +30,6 @@ class AccountInterface :
 
     def set_customerID(self, customerID):
         self.__accountHolderID = customerID
-
-    def get_status(self):
-        return self.__status
-
-    def set_status(self, status):
-        self.__status = status
 
     def get_balance(self):
         return self.__balance
