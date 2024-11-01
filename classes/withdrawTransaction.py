@@ -1,5 +1,5 @@
-from interfaces.account import AccountInterface
-from interfaces.transaction import Transaction
+from .interfaces.account import AccountInterface
+from .interfaces.transaction import Transaction
 
 class WithdrawTransaction(Transaction):
     def __init__(self, transaction_id, transaction_date, transaction_amount, transaction_type, transaction_category, transaction_description):

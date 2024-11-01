@@ -1,13 +1,13 @@
 
 class customer :
-    def __init__(self,customerID, customerName, customerAddress, phoneNumber, customerEmail) :# constructor
+    def __init__(self,customerID, customerName, customerAddress, phoneNumber, customerEmail) :
         self.__customerID = customerID
         self.__customerName = customerName
         self.__customerAddress = customerAddress
         self.__phoneNumber = phoneNumber
         self.__customerEmail = customerEmail
 
-    def getCustomerID(self) :# getter method for customerID
+    def getCustomerID(self) :
         return self.__customerID
     def getCustomerName(self):
         return self.__customerName

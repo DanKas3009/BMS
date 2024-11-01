@@ -1,4 +1,4 @@
-from interfaces.account import AccountInterface
+from .interfaces.account import AccountInterface
 
 class SavingsAccount(AccountInterface):
 
@@ -17,9 +17,6 @@ class SavingsAccount(AccountInterface):
 
     def get_interest(self):
         self.set_balance(self.get_balance() * self.__rate)
-
-    def get_balance(self):
-        return self.get_balance()
 
     def get_rate(self):
         return self.__rate

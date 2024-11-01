@@ -4,6 +4,7 @@ class AccountInterface :
         self.__balance = balance
         self.__accountNumber = accountNumber
         self.__accountHolderID = customerID
+        self.__status = status
         
     #----------------------------------------------
     # Debit is to add money to the account
@@ -16,6 +17,12 @@ class AccountInterface :
     def credit(self, amount) :
         pass
     
+    def get_status(self) :
+        return self.__status
+    
+    def set_status(self, status) :
+        self.__status = status
+
     def getTransactionHistory(self) :
         pass
 
